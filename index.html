@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Loading</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="loading"></div>
+    </div>
+    <h2>Welcome</h2>
+  </body>
+  <script>
+    const container = document.querySelector(".container");
+
+    setTimeout(() => {
+      container.style.opacity = "0";
+      container.style.transition = "opacity .5s";
+      container.style.zIndex = "-1";
+    }, 4000);
+  </script>
+</html>
